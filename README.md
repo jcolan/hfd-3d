@@ -12,7 +12,31 @@ This project provides a comprehensive suite of tools to generate high-quality de
 The project is organized into several directories, each responsible for a specific stage of the data generation pipeline:
 
 *   **/raw_data**: Contains the raw input data (endoscope images and point clouds).
-*   **/depth_data**: The final output directory for the clean, organized dataset.
+*   **/depth_data**: The final output directory for the clean, organized dataset. Its structure is as follows:
+
+```
+depth_data/
+├── endoscope/
+│   ├── dataset1/
+│   │   ├── frame0/
+│   │   │   ├── frame0_depth.png
+│   │   │   ├── frame0_projected.png
+│   │   │   └── frame0.yml
+│   │   ├── frame1/
+│   │   │   └── ...
+│   │   └── ...
+│   ├── dataset2/
+│   │   └── ...
+│   └── ...
+└── point_clouds/
+    ├── dataset1/
+    │   └── merged/
+    │       └── point_cloud.ply
+    ├── dataset2/
+    │   └── ...
+    └── ...
+```
+
 *   **/point\_cloud**: Scripts for processing and merging multiple raw point clouds into a single, dense, and accurate master cloud.
 *   **/depth\_generation**: The core pipeline for generating depth maps and projected views by aligning the master point cloud with endoscopic images.
 *   **/ml\_tools**: Scripts for preparing the final dataset for machine learning tasks, such as splitting into training, validation, and test sets.
