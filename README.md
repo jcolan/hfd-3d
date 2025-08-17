@@ -12,10 +12,10 @@ This project provides a comprehensive suite of tools to generate high-quality de
 The project's datasets are available for download. The `depth_data` contains the final processed output of the pipeline, while the `raw_data` contains the original source files.
 
 * **Processed Dataset (`depth_data`)**: This contains the final, clean dataset including cropped RGB images, 16-bit depth maps, projected views, and camera poses.
-    * **[Download `depth_data` (~65GB)]([depth_data](https://doi.org/10.7910/DVN/NQFSWQ))**
+    * **[Download `depth_data` (~65GB)](https://doi.org/10.7910/DVN/NQFSWQ)**
 
 * **Raw Source Data (`raw_data`)**: This contains the original endoscope video sequences and multiple point clouds used to generate the final dataset.
-    * **[Download `raw_data` (~250GB)]([raw_data](https://drive.google.com/file/d/1KVapf6vsxKZ0lsokw6-pBskeOA3ezrZC))**
+    * **[Download `raw_data` (~250GB)](https://drive.google.com/file/d/1KVapf6vsxKZ0lsokw6-pBskeOA3ezrZC)**
     * *Note: Access to the raw data may require permission or a Google account.*
       
 ## Directory Structure
